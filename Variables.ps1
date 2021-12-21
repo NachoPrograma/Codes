@@ -19,6 +19,9 @@
   Para generar un salto de linea se utiliza la expresion "`n"
 #>
 
+Write-Host ""
+Write-Host ""
+Clear-Host
 
 # Variable tipo entero
 Write-Host ""
@@ -54,7 +57,7 @@ Write-Host "Variable tipo lista 2" -ForegroundColor Blue -BackgroundColor Yellow
 # Ejemplo variable tipo lista (Object[])
 $variableLista2 = "Pera", "Manzana", "Platano"
 Write-Host "La variable es de tipo" $variableLista2.GetType().Name "y su valor es:"$variableLista2
-Write-Host "El valor de la SEGUNDA posicion de la lista2 es" $variableLista2.Get(1) "`n"
+Write-Host "El valor de la SEGUNDA posicion de la lista2 es" $variableLista2.Get(1)
 
 Write-Host ""
 Write-Host "Eliminar el valor de una variable" -ForegroundColor Blue -BackgroundColor Yellow
