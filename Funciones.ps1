@@ -26,3 +26,9 @@ function saludo3 ($nombre, $edad){
     Write-Host El usuario $nombre tiene la edad de $edad
 }
 saludo3("Carlos",23)
+
+
+
+Write-Host ""
+Write-Host ""
+Write-Host "FIN" -ForegroundColor Yellow -BackgroundColor Blue
