@@ -1,50 +1,33 @@
+Add-Type -Assembly PresentationFramework # Ensamblado necesario para Windows
 [xml]$xaml = @"
 <Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    x:Name="Window">
-    <Grid x:Name="Grid">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
-        <TextBox x:Name = "PathTextBox"
-            Width="150"
-            Grid.Column="0"
-            Grid.Row="0"
-        />
-        <Button x:Name = "ValidateButton"
-            Content="Validate"
-            Grid.Column="1"
-            Grid.Row="0"
-        />
-        <Button x:Name = "RemoveButton"
-            Content="Remove"
-            Grid.Column="0"
-            Grid.Row="1"
-        />
-    </Grid>
+    x:Name="Window" Title="Mi aplicacion" Width="300" Height="300">
+    <StackPanel>
+    <TextBlock Text="APLICACIÓN" FontSize="30" FontWeight="Bold" TextAlignment="Center" Margin="10"/>
+        <TextBox x:Name = "MyTextBox" Width="150"/>
+        <TextBlock x:Name = "MyTextBlock" Width = "200"/>
+        <Button x:Name = "MyButton" Content="ACEPTAR" Width = "120"/>
+        
+    </StackPanel>
 </Window>
 "@
 $reader = (New-Object System.Xml.XmlNodeReader $xaml)
 $window = [Windows.Markup.XamlReader]::Load($reader)
-$validateButton = $window.FindName("ValidateButton")
-$removeButton = $window.FindName("RemoveButton")
-$pathTextBox = $window.FindName("PathTextBox")
-$ValidateButton.Add_Click({
-    If(-not (Test-Path $pathTextBox.Text)){
-        $pathTextBox.Text = ""
+# Asignacion de variables. Se obtiene del codigo XAML
+$MyButton = $window.FindName("MyButton")
+$MyTextBox = $window.FindName("MyTextBox")
+$MyTextBlock = $window.FindName("MyTextBlock")
+
+$MyButton.Add_Click({
+    If($MyTextBox.Text.Equals("1234")){
+        $MyTextBlock.Text = "CORRECTO!"
+    }else {
+        $MyTextBlock.Text = "INCORRECTO"
     }
 })
-$removeButton.Add_Click({
-    If($pathTextBox.Text){
-        If(Test-Path $pathTextBox.Text){
-            Remove-Item $pathTextBox.Text
-        }
-    }
-})
+
+
+
 $window.ShowDialog()
