@@ -9,7 +9,7 @@ Write-Host ""
 Write-Host "OPERADOR -eq" -ForegroundColor Blue -BackgroundColor Yellow
 # -eq Compara si dos valores son exactamente iguales
 $miVariable = 9
-$miVariable -eq 5 # La salida es False ya que nco son iguales
+$miVariable -eq 5 # La salida es False ya que no son iguales
 $miVariable -eq 9 # La salida es True ya que son iguales
 
 Write-Host ""
