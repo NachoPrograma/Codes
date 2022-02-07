@@ -1,0 +1,6 @@
+Pregunta 4. mkdir -p
+
+a. Crea un archivo
+b. Siempre crea un directorio
+c. Crea o sobreescribe un directorio.
+d. La opción a. y b. son correctas

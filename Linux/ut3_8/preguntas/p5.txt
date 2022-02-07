@@ -1,0 +1,6 @@
+Pregunta 5. pwd
+
+a. Pone en estado de suspensión el SO
+b. Crea una ruta de acceso directo
+c. Muestra la ruta absoluta del directorio de trabajo
+d. Muestra la ruta relativa del directorio de trabajo

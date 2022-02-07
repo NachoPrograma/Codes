@@ -1,0 +1,6 @@
+Pregunta 3. La expresión ls -a
+
+a. Muestra el contenido del directorio la
+b. Muestra una lista de archivos
+c. Muestra achivos y directorios con permisos
+d. Muestra archivos y directorios (también ocultos)

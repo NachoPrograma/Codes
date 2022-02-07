@@ -1,0 +1,6 @@
+Pregunta 1. El comando rv
+
+a. Sirve para eliminar un archivo
+b. Elimina un directorio
+c. Mover un directorio de una ruto a otra
+d. Ninguna opción es correcta
