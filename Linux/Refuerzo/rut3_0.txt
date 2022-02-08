@@ -1,0 +1,75 @@
+/home/USUARIO/ejercicios
+└── rut3_0
+    └── rootX
+        ├── proyecto1
+        │   ├── comandos
+        │   │   ├── comando1
+        │   │   │   └── estudianteCommand.cs
+        │   │   └── comando2
+        │   ├── modelo
+        │   │   ├── estudianteModel.cs
+        │   │   └── notasModel.cs
+        │   ├── recursos
+        │   │   ├── diccionarios
+        │   │   └── imagenes
+        │   ├── vista
+        │   │   ├── vista1
+        │   │   └── vista2
+        │   └── vistaModelo
+        ├── proyecto2
+        │   ├── comandos
+        │   │   ├── comando1
+        │   │   │   └── profesorCommand.cs
+        │   │   └── comando2
+        │   ├── modelo
+        │   │   ├── profesorModel.cs
+        │   │   └── testProfesorModel.cs
+        │   ├── proyecto1
+        │   │   ├── comandos
+        │   │   │   ├── comando1
+        │   │   │   │   └── estudianteCommand.cs
+        │   │   │   └── comando2
+        │   │   ├── modelo
+        │   │   │   ├── estudianteModel.cs
+        │   │   │   └── notasModel.cs
+        │   │   ├── recursos
+        │   │   │   ├── diccionarios
+        │   │   │   └── imagenes
+        │   │   ├── vista
+        │   │   │   ├── vista1
+        │   │   │   └── vista2
+        │   │   └── vistaModelo
+        │   ├── recursos
+        │   │   ├── diccionarios
+        │   │   └── imagenes
+        │   ├── vista
+        │   │   ├── vista1
+        │   │   └── vista2
+        │   └── vistaModelo
+        └── proyecto3
+            ├── comandos
+            │   ├── comando1
+            │   └── comando2
+            ├── modelo
+            ├── proyecto1
+            │   ├── comandos
+            │   │   ├── comando1
+            │   │   │   └── estudianteCommand.cs
+            │   │   └── comando2
+            │   ├── modelo
+            │   │   ├── estudianteModel.cs
+            │   │   └── notasModel.cs
+            │   ├── recursos
+            │   │   ├── diccionarios
+            │   │   └── imagenes
+            │   ├── vista
+            │   │   ├── vista1
+            │   │   └── vista2
+            │   └── vistaModelo
+            ├── recursos
+            │   ├── diccionarios
+            │   └── imagenes
+            ├── vista
+            │   ├── vista1
+            │   └── vista2
+            └── vistaModelo
