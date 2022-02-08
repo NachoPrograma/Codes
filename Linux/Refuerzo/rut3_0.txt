@@ -1,4 +1,4 @@
-/home/rafa/ejercicios
+/home/USUARIO/ejercicios
 └── rut3_0
     └── rootX
         ├── proyecto1
